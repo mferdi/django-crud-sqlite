@@ -1,0 +1,33 @@
+<h1>Karyawan Form</h1>
+<form method="POST">{% csrf_token %}
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>{{ form.name }}</td>
+        </tr>
+        <tr>
+            <td>NIP</td>
+            <td>:</td>
+            <td>{{ form.nip }}</td>
+        </tr>
+        <tr>
+            <td>Divisi</td>
+            <td>:</td>
+            <td>{{ form.divisi }}</td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td>{{ form.alamat }}</td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>{{ form.jeniskelamin }}</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Save"></td>
+        </tr>
+    </table>
+</form>
